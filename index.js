@@ -6,6 +6,6 @@ app.use(express.json()); // req.body를 JSON으로 파싱
 app.use(require('./routes/getRoutes')); // getRoutes 사용
 app.use(require('./routes/postRoutes')); // postRoutes 사용
 app.use(require('./routes/putRoutes')); // updateRoutes 사용
-// app.use(require('./routes/deleteRoutes')); // deleteRoutes 사용
+app.use(require('./routes/deleteRoutes')); // deleteRoutes 사용
 
 app.listen(port, () => console.log(`App running on port ${port}`));
